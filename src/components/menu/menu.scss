@@ -1,0 +1,47 @@
+$color-white: #fff;
+$color-primary: #3D405B;
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    
+    &__logo > img {
+        width: 6em;
+        height: calc(6em / 2);
+        margin: 0.3rem 1rem;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: $color-primary;
+      font-size: 1.2    rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+      font-family: 'Inter', sans-serif;
+      height: 50%;
+      margin: 0 1rem;
+  
+      &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+      }
+    }
+
+}
